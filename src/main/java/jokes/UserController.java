@@ -18,13 +18,14 @@ public class UserController {
         Admin admin2 = new Admin("adminAdam2", "adminKowalsky2");
         Admin admin3 = new Admin("adminAdam3", "adminKowalsky3");
 
-        List<User> users = new ArrayList();
+        List<User> users = new ArrayList(); //Admin jest traktowany jako user
         users.add(user);
         users.add(user2);
         users.add(admin);
         users.add(admin2);
         users.add(admin3);
 
-        return null;
+        modelMap.put("users", users);
+        return "users";
     }
 }

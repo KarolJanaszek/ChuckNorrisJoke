@@ -1,6 +1,6 @@
 package jokes;
 
-public class User {
+public abstract class User { //abstract - klasa abstrakcyjna. Nie da się zrobić konstruktora tej klasy
     private String username;
     private String password;
 
