@@ -5,14 +5,16 @@
     <title>Chuck Norie's Joke</title>
 </head>
 <body>
-<h1>Try to not laught. Really.</h1>
-<label>Kawał znajduje się poniżej:</label>
+<div style="background-color:#A1B8C6;width:300px;border:1px solid black;padding:30px;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Chuck_Norris_May_2015.jpg/176px-Chuck_Norris_May_2015.jpg" alt="Chuck Norris">
+<h1>Try to not laugh. Really.</h1>
+<i><b><label>Joke u can find below:</label></b></i>
 <br>
-<form action="/">
-<h2><p th:text="${quote}"/> </h2> <!-- pobiera zmienną quote z mapy ModelMaph2 -->
+<form action="/"> <!-- informuje, dokąd ma wrócić przycisk akcj -->
+    <font color=#5B0903><h2><p th:text="${quote}"/> </h2></font> <!-- pobiera zmienną quote z mapy ModelMaph2 -->
 <br>
 <input type="submit" value="Generate new joke"> <!-- tworzy przycisk generujący nowy kawał -->
 <br></form>
-
+</div>
 </body>
 </html>
