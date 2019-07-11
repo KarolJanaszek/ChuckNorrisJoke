@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Norie's Joke</title>
+</head>
+<body>
+<h1>Try to not laught. Really.</h1>
+<label>Kawał znajduje się poniżej:</label>
+<br>
+<form action="/">
+<h2><p th:text="${quote}"/> </h2> <!-- pobiera zmienną quote z mapy ModelMaph2 -->
+<br>
+<input type="submit" value="Generate new joke"> <!-- tworzy przycisk generujący nowy kawał -->
+<br></form>
+
+</body>
+</html>
